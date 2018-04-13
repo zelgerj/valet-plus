@@ -1,6 +1,5 @@
 os: osx
-language: php
+language: bash
+script:
+  - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-php: 7.1
-
-script: echo 1
