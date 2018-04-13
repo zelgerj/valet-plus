@@ -3,17 +3,14 @@ language: bash
 script:
   - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   - brew install php@7.1
-  - brew install composer
-  - composer global require techdivision/valet-plus dev-$TRAVIS_BRANCH
-  - export PATH="$PATH:$HOME/.composer/vendor/bin"
-  - valet
-  - valet fix
-  - valet install
-  - valet use 5.6
-  - valet xdebug on
-  - valet use 7.0
-  - valet xdebug on
-  - valet use 7.1
-  - valet xdebug on
-  - valet use 7.2
+  - ./valet
+  - ./valet fix
+  - ./valet install
+  - ./valet use 5.6
+  - ./valet xdebug on
+  - ./valet use 7.0
+  - ./valet xdebug on
+  - ./valet use 7.1
+  - ./valet xdebug on
+  - ./valet use 7.2
   
