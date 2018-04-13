@@ -1,4 +1,6 @@
-jobs:
-  - language: ruby
-    os: osx
-    script: echo 'test'
+os: osx
+language: php
+
+php: 7.1
+
+script: echo 1
