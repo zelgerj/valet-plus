@@ -3,6 +3,7 @@ language: bash
 script:
   - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   - brew install php@7.1
+  - brew install composer
   - composer global require techdivision/valet-plus dev-$TRAVIS_BRANCH
   - export PATH="$PATH:$HOME/.composer/vendor/bin"
   - valet
