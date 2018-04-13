@@ -4,6 +4,8 @@ script:
   - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   - brew install php@7.1
   - brew install composer
+  - brew install python@2
+  - brew link --force --overwrite python@2
   - composer install
   - ./valet
   - ./valet fix
